@@ -1,4 +1,4 @@
-package com.example.konyateknikapp;
+﻿package com.example.konyateknikapp;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -25,7 +25,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             } else if(s1[0].equals("") || s1[1].equals("")){
                 Toast.makeText(MainActivity.this,  "Kullanıcı adı ve Parola giriniz!", Toast.LENGTH_SHORT).show();
-            }else Toast.makeText(MainActivity.this, "Yanlış Kullanıcı adı ve ya Parola!"+Passwords[i], Toast.LENGTH_SHORT).show();
+		break;
+            }else{
+		   Toast.makeText(MainActivity.this, "Yanlış Kullanıcı adı ve ya Parola!", Toast.LENGTH_SHORT).show();
+		   break;
+		}
         }
 
     }
