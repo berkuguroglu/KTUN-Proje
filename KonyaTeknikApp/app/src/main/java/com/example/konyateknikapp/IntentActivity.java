@@ -9,7 +9,7 @@ public class IntentActivity extends AppCompatActivity {
 
     public void turnBack(View view) {
         Intent in = new Intent(IntentActivity.this, MainActivity.class);
-        startActivity(in);
+        startActivityForResult(in);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
